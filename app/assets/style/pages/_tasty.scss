@@ -1,0 +1,56 @@
+.tasty{
+  .tasty-menu{
+    img{
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .tasty-list{
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .card-body{
+        width: 90%;
+      }
+    }
+    .slide-img {    
+      width: 100%;
+      padding-bottom: 72%;
+      background-size: cover;
+      background-position: center center;
+    }
+    .img-1{
+      background-image: url(../images/pro-1.jpg);
+    }
+    .img-2{
+      background-image: url(../images/pro-2.jpg);
+    }
+    .img-3{
+      background-image: url(../images/pro-3.jpg);
+    }
+    .img-4{
+      background-image: url(../images/pro-4.jpg);
+    }
+    .tasty-chili-icon{
+      background-image: url(../images/chili.png);
+     
+      width: 24px;
+      height: 24px;
+    }
+  
+  }
+}
+
+
+/* 購物車 alert
+Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Your work has been saved',
+  showConfirmButton: false,
+  timer: 1500
+})
+
+*/

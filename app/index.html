@@ -1,58 +1,181 @@
 ---
-title: Boostrap Index
+title: 首頁
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+<div class="index">
+  <section class="banner d-flex flex-column align-items-center justify-content-between pt-3 pb-6 mb-100">  
+    <div class="banner-title">
+      <h2 class="text-light">用心製麵</h2>
     </div>
-  </div>
+    <div class="banner-info ">
+      <p class="text-light display-6">為您獻上美味的一碗</p>
+      <div class="button bg-light text-dark text-center  mx-auto h6">了解更多</div>
+    </div> 
+  </section>
+  <section class="hot-food">   
+    <div class="container">
+      <h1 class="mb-20">熱門美食</h1>      
+      <div class="row"> 
+        <div class="col-12 col-md-6 p-3">
+          <img class="w-100" src="./assets/images/hot-food1.png" alt="">
+          <h4 class="text-center pt-2 pb-4">涼麵系列</h4>    
+        </div>
+        <div class="col-12 col-md-6 p-3">
+          <img class="w-100" src="./assets/images/hot-food2.png" alt="">
+          <h4 class="text-center pt-2 pb-4">湯麵系列</h4>    
+        </div>
+        <div class="col-12 col-md-6 p-3" style="margin-top:-36px ;">
+          <img class="w-100" src="./assets/images/hot-food4.png" alt="">
+          <h4 class="text-center  pt-2 pb-4 ">炸物系列</h4>    
+        </div>
+        <div class="col-12 col-md-6 p-3">
+          <img class="w-100" src="./assets/images/hot-food3.png" style="margin-top:-36px ;" alt="">
+          <h4 class="text-center pt-2 pb-4 ">小菜系列</h4>
+    
+        </div>
+      </div> 
+
+      <!-- <ul class="d-flex flex-row flex-wrap">
+        <li><img src="./assets/images/hot-food1.png" alt=""></li>
+        <li><img src="./assets/images/hot-food2.png" alt=""></li>
+        <li><img src="./assets/images/hot-food4.png" alt=""></li>
+        <li><img src="./assets/images/hot-food3.png" alt=""></li>
+      </ul> -->
+    </div>
+    
+  </section>
+
+  <section class="news">
+    <div class="news-list container px-4">
+      <div class="news-items"> 
+        <div class="news-border d-flex d-flex d-flex justify-content-between align-items-center border border-light border-3">
+          
+          <div class="news-info p-lg-4 text-light"> 
+            <h3 class="news-title  mb-lg-4 ">最新消息</h3> 
+            <p class="fs-5 fs-md-3 mb-0">香酥蔥油乾麵口味新品上市!</p>
+            <p class="fs-5 mb-2 mb-md-2">即日起加入會員享...</p>
+            <div class="button bg-dark p-2 text-light fs-6 text-center">了解更多</div>
+          </div>
+          <div class=" news-image d-none d-lg-block">
+            <img src="./assets/images/news1.png" alt="">  
+          </div>                     
+        </div>            
+      </div>
+     
+    </div>    
+  </section>
+
+  <section class="hot-product mb-100">
+    <div class="container">
+      <h3 class="m-36">熱門商品</h3>
+      <div class="swiper-father mx-3">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card">
+                <h4 class="card-title">香酥蔥油湯麵</h4>
+                <p class="card-text">番茄豆皮</p>             
+                <div class="slide-img img-1"></div>
+                <div class="card-body">
+                  <p class="card-text">NT$.123</p>
+                  <a href="#" class="btn btn-info text-light">加入購物車</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h4 class="card-title">香酥蔥油湯麵</h4>
+                <p class="card-text">番茄豆皮</p>             
+                <div class="slide-img img-2"></div>
+                <div class="card-body">
+                  <p class="card-text">NT$.123</p>
+                  <a href="#" class="btn btn-info text-light">加入購物車</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h4 class="card-title">香酥蔥油湯麵</h4>
+                <p class="card-text">番茄豆皮</p>             
+                <div class="slide-img img-3"></div>
+                <div class="card-body">
+                  <p class="card-text">NT$.123</p>
+                  <a href="#" class="btn btn-info text-light">加入購物車</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h4 class="card-title">香酥蔥油湯麵</h4>
+                <p class="card-text">番茄豆皮</p>             
+                <div class="slide-img img-4"></div>
+                <div class="card-body">
+                  <p class="card-text">NT$.123</p>
+                  <a href="#" class="btn btn-info text-light">加入購物車</a>
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
+        <div class="swiper-button-prev">          
+          <img src="./assets/images/arrow-left.png" />
+        </div>
+        <div class="swiper-button-next">
+          <img src="./assets/images/arrow-right.png" />
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
 </div>
+
+<script>
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+
+    loop: true,
+    slidesPerView: 4,
+    autoHeight: true,
+    autoplay: {
+    delay: 3000, // 3秒切換一次   
+   },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      769: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 33,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+</script>

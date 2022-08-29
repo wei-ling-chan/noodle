@@ -1,0 +1,25 @@
+.header{
+  
+  .logo{
+   width: 200px;
+   height: 100px;
+  }
+  .bi-person,.bi-search,.bi-cart{
+    font-size: 28px;
+  }  
+}
+
+
+
+/*RWD*/
+@include media-breakpoint-down(md) {
+  .header{
+    .menu{      
+      li{
+        border:1px solid black;
+      }
+    }
+   
+  }
+ }
+ 

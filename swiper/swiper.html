@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <script src="all.js"></script> -->
+    <!-- <script src="bmi/bmi-5.js"></script> -->
+  </head>
+  <body>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="card">
+            <h4 class="card-title">香酥蔥油湯麵</h4>
+            <p class="card-text">番茄豆皮</p>
+            <img src="../images/pro-1.jpg" alt="" class="silde-img" />
+            <div class="card-body">
+              <p class="card-text">NT$.123</p>
+              <a href="#" class="btn btn-primary">加入購物車</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <h4 class="card-title">香酥蔥油湯麵</h4>
+            <p class="card-text">番茄豆皮</p>
+            <img src="../images/pro-1.jpg" alt="" class="silde-img" />
+            <div class="card-body">
+              <p class="card-text">NT$.123</p>
+              <a href="#" class="btn btn-primary">加入購物車</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <h4 class="card-title">香酥蔥油湯麵</h4>
+            <p class="card-text">番茄豆皮</p>
+            <img src="../images/pro-1.jpg" alt="" class="silde-img" />
+            <div class="card-body">
+              <p class="card-text">NT$.123</p>
+              <a href="#" class="btn btn-primary">加入購物車</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <h4 class="card-title">香酥蔥油湯麵</h4>
+            <p class="card-text">番茄豆皮</p>
+            <img src="../images/pro-1.jpg" alt="" class="silde-img" />
+            <div class="card-body">
+              <p class="card-text">NT$.123</p>
+              <a href="#" class="btn btn-primary">加入購物車</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev">
+        <img src="../images/arrow-left.png" />
+      </div>
+      <div class="swiper-button-next">
+        <img src="../images/arrow-right.png" />
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 輪播 -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 4,
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      769: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 33,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+</script>
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .silde-img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .swiper {
+    position: relative;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+  }
+
+  .swiper-button-prev img,
+  .swiper-button-next img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    display: none;
+  }
+</style>
