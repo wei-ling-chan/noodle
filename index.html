@@ -5,105 +5,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
+    <title>首頁</title>
+    <!-- 輪播 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+    <!--sweetalert-->
+    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <header class="header bg-primary  sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid justify-content-between">
+            <img src="./assets/images/logo.png" class="logo" alt="麵鋪子">  
+            <a class="logo navbar-brand d-none d-md-block " href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">             
+              <ul class="menu navbar-nav  fs-5 fw-bold text-center mb-md-0 mb-3">
+                <li class="nav-item me-md-6 me-0 mt-md-2  my-2 mt-4">
+                  <a class="nav-link" aria-current="page" href="#">關於我們</a>                  
+                </li>
+                <li class="nav-item me-md-6 me-0 my-2 ">
+                  <a class="nav-link" href="#">美味專區</a>
+                </li>
+                <li class="nav-item me-md-6 me-0 my-2">                  
+                  <a class="nav-link" href="#">最新消息</a>
+                </li>                         
+              </ul>            
+
+              <ul class="serch-shopCart navbar-nav text-center flex-row flex-nowrap justify-content-between">              
+                <li class="serch nav-item me-2">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person"></i></a>
+                </li>
+                <li class="serch nav-item me-2">                  
+                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-search"></i></a>                 
+                </li>
+                <li class="cart nav-item">                  
+                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart"></i></a>                 
+                </li>                      
+              </ul>             
+            </div>
+          </div>
+        </nav>
+      </div>
+     
+    </header>    
+
+    <div class="index">
+  <section class="banner d-flex flex-column align-items-center justify-content-between pt-3 pb-6 mb-100">  
+    <div class="banner-title">
+      <h2 class="text-light">用心製麵</h2>
+    </div>
+    <div class="banner-info ">
+      <p class="text-light display-6">為您獻上美味的一碗</p>
+      <div class="button bg-light text-dark text-center  mx-auto h6">了解更多</div>
+    </div> 
+  </section>
+  <section class="hot-food">   
+    <div class="container">
+      <h1 class="mb-20">熱門美食</h1>      
+      <div class="row"> 
+        <div class="col-12 col-md-6 p-3">
+          <img class="w-100" src="./assets/images/hot-food1.png" alt="">
+          <h4 class="text-center pt-2 pb-4">涼麵系列</h4>    
+        </div>
+        <div class="col-12 col-md-6 p-3">
+          <img class="w-100" src="./assets/images/hot-food2.png" alt="">
+          <h4 class="text-center pt-2 pb-4">湯麵系列</h4>    
+        </div>
+        <div class="col-12 col-md-6 p-3" style="margin-top:-36px ;">
+          <img class="w-100" src="./assets/images/hot-food4.png" alt="">
+          <h4 class="text-center  pt-2 pb-4 ">炸物系列</h4>    
+        </div>
+        <div class="col-12 col-md-6 p-3">
+          <img class="w-100" src="./assets/images/hot-food3.png" style="margin-top:-36px ;" alt="">
+          <h4 class="text-center pt-2 pb-4 ">小菜系列</h4>
+    
+        </div>
+      </div> 
+
+      <!-- <ul class="d-flex flex-row flex-wrap">
+        <li><img src="./assets/images/hot-food1.png" alt=""></li>
+        <li><img src="./assets/images/hot-food2.png" alt=""></li>
+        <li><img src="./assets/images/hot-food4.png" alt=""></li>
+        <li><img src="./assets/images/hot-food3.png" alt=""></li>
+      </ul> -->
+    </div>
+    
+  </section>
+
+  <section class="news">
+    <div class="news-list container px-4">
+      <div class="news-items"> 
+        <div class="news-border d-flex d-flex d-flex justify-content-between align-items-center border border-light border-3">
+          
+          <div class="news-info p-lg-4 text-light"> 
+            <h3 class="news-title  mb-lg-4 ">最新消息</h3> 
+            <p class="fs-5 fs-md-3 mb-0">香酥蔥油乾麵口味新品上市!</p>
+            <p class="fs-5 mb-2 mb-md-2">即日起加入會員享...</p>
+            <div class="button bg-dark p-2 text-light fs-6 text-center">了解更多</div>
+          </div>
+          <div class=" news-image d-none d-lg-block">
+            <img src="./assets/images/news1.png" alt="">  
+          </div>                     
+        </div>            
+      </div>
+     
+    </div>    
+  </section>
+
+  <section class="hot-product mb-100">
+    <div class="container">
+      <h3 class="m-36">熱門商品</h3>
+      <div class="swiper-father mx-3">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card">
+                <h4 class="card-title">香酥蔥油湯麵</h4>
+                <p class="card-text">番茄豆皮</p>             
+                <div class="slide-img img-1"></div>
+                <div class="card-body">
+                  <p class="card-text">NT$.123</p>
+                  <a href="#" class="btn btn-info text-light">加入購物車</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h4 class="card-title">香酥蔥油湯麵</h4>
+                <p class="card-text">番茄豆皮</p>             
+                <div class="slide-img img-2"></div>
+                <div class="card-body">
+                  <p class="card-text">NT$.123</p>
+                  <a href="#" class="btn btn-info text-light">加入購物車</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h4 class="card-title">香酥蔥油湯麵</h4>
+                <p class="card-text">番茄豆皮</p>             
+                <div class="slide-img img-3"></div>
+                <div class="card-body">
+                  <p class="card-text">NT$.123</p>
+                  <a href="#" class="btn btn-info text-light">加入購物車</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <h4 class="card-title">香酥蔥油湯麵</h4>
+                <p class="card-text">番茄豆皮</p>             
+                <div class="slide-img img-4"></div>
+                <div class="card-body">
+                  <p class="card-text">NT$.123</p>
+                  <a href="#" class="btn btn-info text-light">加入購物車</a>
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
+        <div class="swiper-button-prev">          
+          <img src="./assets/images/arrow-left.png" />
+        </div>
+        <div class="swiper-button-next">
+          <img src="./assets/images/arrow-right.png" />
         </div>
       </div>
-    </nav>
-
-    
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      
     </div>
-  </div>
+    
+  </section>
 </div>
 
+<script>
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
 
-    <footer class="footer">
-      footer
+    loop: true,
+    slidesPerView: 4,
+    autoHeight: true,
+    autoplay: {
+    delay: 3000, // 3秒切換一次   
+   },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      769: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 33,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+</script>
+
+
+    <footer class="footer bg-dark">
+      <div class="container  d-flex justify-content-between py-5">
+        <nav class="contact">
+          <div class="mb-3 text-light"> <a href="javascript:void(0)">聯絡我們</a></div>
+          <ul class="contact-info">           
+            <li class="mb-1"><a href="tel:+0800-123-4567">電話: 04-1234567</a></li>
+            <li class="mb-1"><a href="mailto:wlc606@gmail.com">E-mail: wlc606@gmail.com</a></li>
+            <li class="mb-1"><a href="javascript:void(0)">營業時間(週二公休): 11:00 am-7:00 pm</a></li>
+            <li class="mb-1"><a href="#">地址: 台中市XX區XX里一段XX巷</a></li>                        
+          </ul>
+        </nav>
+        <nav class="menu-social d-md-block d-none">
+          <ul class="contact-info d-flex mb-6 justify-content-between">          
+              <li class="me-3"><a href="#">關於我們</a></li>
+              <li class="me-3"><a href="#">美味專區</a></li>
+              <li class="me-3"><a href="#">新品上市</a></li>
+              <li><a href="#">註冊/登入</a></li>              
+             
+          </ul>
+          <ul class="contact-icon d-flex justify-content-end">
+            <li class="me-3"><a href="#" class="diplay-6"><i class="bi bi-facebook"></i></a></li>
+            <li class="me-3"><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-github"></i></a></li>
+          </ul>
+
+         
+        </nav>       
+      </div>
+      <div class="copyright bg-success">
+        <div class="container">
+          <p class="text-light mb-0">ⓒ Copyright 2022 麵鋪子僅作為個人作品，無任何商業用途</p>        
+        </div>                   
+      </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
