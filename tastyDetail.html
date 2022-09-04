@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首頁</title>
+    <title>詳頁</title>
     <!-- 輪播 -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -57,124 +57,121 @@
      
     </header>    
 
-    <div class="index">
-  <section class="banner d-flex flex-column align-items-center justify-content-between pt-3 pb-6 mb-100">  
-    <div class="banner-title">
+    <div class="tastyDetail">
+  <section class="banner d-flex flex-column align-items-center justify-content-between pt-3 pb-6 mb-0 mb-md-100">  
+    <!-- <div class="banner-title">
       <h2 class="text-light">用心製麵</h2>
     </div>
     <div class="banner-info ">
       <p class="text-light display-6">為您獻上美味的一碗</p>
       <div class="button bg-light text-dark text-center  mx-auto h6">了解更多</div>
-    </div> 
-  </section>
-  <section class="hot-food">   
-    <div class="container">
-      <h1 class="mb-20">熱門美食</h1>      
-      <div class="row"> 
-        <div class="col-12 col-md-6 p-3">
-          <img class="w-100" src="./assets/images/hot-food1.png" alt="">
-          <h4 class="text-center pt-2 pb-4">涼麵系列</h4>    
-        </div>
-        <div class="col-12 col-md-6 p-3">
-          <img class="w-100" src="./assets/images/hot-food2.png" alt="">
-          <h4 class="text-center pt-2 pb-4">湯麵系列</h4>    
-        </div>
-        <div class="col-12 col-md-6 p-3" style="margin-top:-36px ;">
-          <img class="w-100" src="./assets/images/hot-food4.png" alt="">
-          <h4 class="text-center  pt-2 pb-4 ">炸物系列</h4>    
-        </div>
-        <div class="col-12 col-md-6 p-3">
-          <img class="w-100" src="./assets/images/hot-food3.png" style="margin-top:-36px ;" alt="">
-          <h4 class="text-center pt-2 pb-4 ">小菜系列</h4>
-    
-        </div>
-      </div>      
-    </div>
-    
+    </div>  -->
   </section>
 
-  <section class="news">
-    <div class="news-list container px-4">
-      <div class="news-items"> 
-        <div class="news-border d-flex d-flex d-flex justify-content-between align-items-center border border-light border-3">
-          
-          <div class="news-info p-lg-4 text-light"> 
-            <h3 class="news-title  mb-lg-4 ">最新消息</h3> 
-            <p class="fs-5 fs-md-3 mb-0">香酥蔥油乾麵口味新品上市!</p>
-            <p class="fs-5 mb-2 mb-md-2">即日起加入會員享...</p>
-            <div class="button bg-dark p-2 text-light fs-6 text-center">了解更多</div>
+  <div class="container">   
+    <section class="tastyDetail-breadcrumb d-flex mx-3">
+      <div class="tastyDetail-breadcrumb-list mx-auto d-flex justify-content-between">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mt-4">
+            <li class="breadcrumb-item text-dark"><a href="#">首頁</a></li>
+            <li class="breadcrumb-item"><a href="#">美味專區</a></li>
+            <li class="breadcrumb-item active" aria-current="page">產品詳頁</li>
+          </ol>
+        </nav>
+        <!-- <div class="mt-4"><p>商品已加入購物車</p></div> -->
+      </div>     
+    </section>
+
+    <section class="tastyDetail-product mb-100 mx-3">
+      <div class="tastyDetail-product-item mx-auto">
+        <div class="row">        
+          <div class="col-12 col-md-6 pe-4 mb-4">          
+            <img src="./assets/images/pro-1.jpg" alt="">
           </div>
-          <div class=" news-image d-none d-lg-block">
-            <img src="./assets/images/news1.png" alt="">  
-          </div>                     
-        </div>            
-      </div>
-     
-    </div>    
-  </section>
+          <div class="product-info col-12 col-md-6">
+            <h1 class="product-name mb-4">香菇肉燥麵 <span class="text-sm badge bg-info">乾麵</span></h1>
+            <ul class="ps-0" >          
+              <li class="fs-6"><span>產品描述:</span><span>鮮嫩多汁的好滋味</span> </li>
+              <li class="fs-6 mb-3"><span>商品內容:</span><span>香菇、肉燥</span> </li>
+              <li class="fs-6"><span>價格:</span><span>80元</span></li>
+            </ul>
+            <div class="d-flex">
+              <select>            
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+              </select>
+              <button type="button" class="btn btn-dark text-light">加到購物車</button>
+            </div>
+          </div>
+        </div> 
+      </div>              
+    </section>
 
-  <section class="hot-product mb-100">
-    <div class="container">
-      <h3 class="m-36">熱門商品</h3>
-      <div class="swiper-father mx-3">
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="card">
-                <h4 class="card-title">香酥蔥油湯麵</h4>
-                <p class="card-text">番茄豆皮</p>             
-                <div class="slide-img img-1"></div>
-                <div class="card-body">
-                  <p class="card-text">NT$.123</p>
-                  <a href="#" class="btn btn-info text-light">加入購物車</a>
-                </div>
+    <section class="swiper-father mx-3 mb-100">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card">
+              <h4 class="card-title">香酥蔥油湯麵</h4>
+              <p class="card-text">番茄豆皮</p>             
+              <div class="slide-img img-1"></div>
+              <div class="card-body">
+                <p class="card-text">NT$.123</p>
+                <a href="#" class="btn btn-info text-light">加入購物車</a>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <h4 class="card-title">香酥蔥油湯麵</h4>
-                <p class="card-text">番茄豆皮</p>             
-                <div class="slide-img img-2"></div>
-                <div class="card-body">
-                  <p class="card-text">NT$.123</p>
-                  <a href="#" class="btn btn-info text-light">加入購物車</a>
-                </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <h4 class="card-title">香酥蔥油湯麵</h4>
+              <p class="card-text">番茄豆皮</p>             
+              <div class="slide-img img-2"></div>
+              <div class="card-body">
+                <p class="card-text">NT$.123</p>
+                <a href="#" class="btn btn-info text-light">加入購物車</a>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <h4 class="card-title">香酥蔥油湯麵</h4>
-                <p class="card-text">番茄豆皮</p>             
-                <div class="slide-img img-3"></div>
-                <div class="card-body">
-                  <p class="card-text">NT$.123</p>
-                  <a href="#" class="btn btn-info text-light">加入購物車</a>
-                </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <h4 class="card-title">香酥蔥油湯麵</h4>
+              <p class="card-text">番茄豆皮</p>             
+              <div class="slide-img img-3"></div>
+              <div class="card-body">
+                <p class="card-text">NT$.123</p>
+                <a href="#" class="btn btn-info text-light">加入購物車</a>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <h4 class="card-title">香酥蔥油湯麵</h4>
-                <p class="card-text">番茄豆皮</p>             
-                <div class="slide-img img-4"></div>
-                <div class="card-body">
-                  <p class="card-text">NT$.123</p>
-                  <a href="#" class="btn btn-info text-light">加入購物車</a>
-                </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <h4 class="card-title">香酥蔥油湯麵</h4>
+              <p class="card-text">番茄豆皮</p>             
+              <div class="slide-img img-4"></div>
+              <div class="card-body">
+                <p class="card-text">NT$.123</p>
+                <a href="#" class="btn btn-info text-light">加入購物車</a>
               </div>
             </div>
-          </div>        
-        </div>
-        <div class="swiper-button-prev">          
-          <img src="./assets/images/arrow-left.png" />
-        </div>
-        <div class="swiper-button-next">
-          <img src="./assets/images/arrow-right.png" />
-        </div>
+          </div>
+        </div>        
       </div>
-      
+      <div class="swiper-button-prev">          
+        <img src="./assets/images/arrow-left.png" />
+      </div>
+      <div class="swiper-button-next">
+        <img src="./assets/images/arrow-right.png" />
+      </div>
     </div>
     
   </section>

@@ -13220,9 +13220,27 @@ body img {
   }
 }
 
+.tasty .banner {
+  height: 50vh;
+  background-image: url(../images/index-header_banner1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .tasty .tasty-menu img {
   width: 24px;
   height: 24px;
+}
+
+.tasty .tasty-menu img:hover {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 10px;
+}
+
+.tasty .tasty-menu .tasty-menu-item {
+  height: 60px;
 }
 
 .tasty .tasty-list .card {
@@ -13284,5 +13302,142 @@ Swal.fire({
 })
 
 */
+.tastyDetail .banner {
+  height: 50vh;
+  background-image: url(../images/index-header_banner1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.tastyDetail .breadcrumb > .active, .tastyDetail .breadcrumb > .active a {
+  color: black;
+}
+
+.tastyDetail ol > li > a {
+  color: #6c757d;
+}
+
+.tastyDetail .tastyDetail-product img {
+  width: 100%;
+  height: auto;
+}
+
+.tastyDetail .tastyDetail-product .badge {
+  font-size: 16px;
+  vertical-align: super;
+}
+
+.tastyDetail .tastyDetail-product button {
+  color: #0E376F;
+}
+
+.tastyDetail .tastyDetail-product select {
+  width: 80px;
+  margin-right: 75px;
+}
+
+.tastyDetail .tastyDetail-breadcrumb-list, .tastyDetail .tastyDetail-product-item {
+  width: 90%;
+}
+
+.tastyDetail .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tastyDetail .slide-img {
+  width: 100%;
+  padding-bottom: 72%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.tastyDetail .img-1 {
+  background-image: url(../images/pro-1.jpg);
+}
+
+.tastyDetail .img-2 {
+  background-image: url(../images/pro-2.jpg);
+}
+
+.tastyDetail .img-3 {
+  background-image: url(../images/pro-3.jpg);
+}
+
+.tastyDetail .img-4 {
+  background-image: url(../images/pro-4.jpg);
+}
+
+.tastyDetail .swiper-father {
+  position: relative;
+}
+
+.tastyDetail .swiper-father .swiper {
+  width: 90%;
+}
+
+.tastyDetail .swiper-button-prev, .tastyDetail .swiper-button-next {
+  position: absolute;
+  top: 50%;
+}
+
+.tastyDetail .swiper-button-prev img,
+.tastyDetail .swiper-button-next img {
+  width: 48px;
+  height: 48px;
+}
+
+.tastyDetail .swiper-button-prev::after,
+.tastyDetail .swiper-button-next::after {
+  display: none;
+}
+
+/*RWD*/
+@media (max-width: 575.98px) {
+  .tastyDetail .tastyDetail-breadcrumb-list, .tastyDetail .tastyDetail-product-item {
+    width: 100%;
+  }
+}
+
+.about .banner {
+  height: 50vh;
+  background-image: url(../images/index-header_banner1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.about iframe {
+  padding: 0px;
+  border-width: 0px;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  height: 50vh;
+}
+
+.news .banner {
+  height: 50vh;
+  background-image: url(../images/index-header_banner1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.news .news-info {
+  border: 3px dashed #7b7d42cc;
+}
 
 /*# sourceMappingURL=all.css.map */
