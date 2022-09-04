@@ -1,0 +1,12 @@
+.news{
+  .banner{
+    height: 50vh;
+    background-image: url(../images/index-header_banner1.png);
+    background-size: cover;    
+    background-position:center center;
+    background-repeat: no-repeat;   
+  }
+  .news-info{
+    border: 3px dashed $info;
+  }
+}

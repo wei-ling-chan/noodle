@@ -1,8 +1,30 @@
 .tasty{
+  .banner{
+    height: 50vh;
+    background-image: url(../images/index-header_banner1.png);
+    background-size: cover;    
+    background-position:center center;
+    background-repeat: no-repeat;
+    // .button{
+    //   width: 90%;
+    //   height: 45%;      
+    //   padding-top:18px;
+    //   font-weight: bold;
+      
+    // }
+  }
   .tasty-menu{
     img{
       width: 24px;
       height: 24px;
+      &:hover{
+        width: 36px;
+        height: 36px;
+        margin-bottom: 10px;
+      }
+    }
+    .tasty-menu-item{
+     height: 60px;   
     }
   }
   .tasty-list{
