@@ -1,33 +1,55 @@
 .tasty{
   .banner{
     height: 50vh;
-    background-image: url(../images/index-header_banner1.png);
+    background-image: url(../images/tasty-banner.jpg);
     background-size: cover;    
     background-position:center center;
     background-repeat: no-repeat;
-    // .button{
-    //   width: 90%;
-    //   height: 45%;      
-    //   padding-top:18px;
-    //   font-weight: bold;
-      
-    // }
+    position: relative;
+    &::after{
+      position: absolute;
+      content:"";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color:black;
+      opacity: 0.1;
+    }
+    
+   
+    .banner-title{
+      position: absolute;
+      top: 70px;
+      left: 423px;
+      z-index: 1;
+    }
+    .banner-info{
+      position: absolute;
+      top: 242px;
+      left: 651px;
+      z-index: 1;
+    }
   }
   .tasty-menu{
-    img{
-      width: 24px;
-      height: 24px;
-      &:hover{
-        width: 36px;
-        height: 36px;
-        margin-bottom: 10px;
-      }
+    // margin-top: 36px;
+    img{      
+      width: 40px;
+      height: 40px;
+      margin-top: 15px;     
     }
     .tasty-menu-item{
-     height: 60px;   
-    }
+      width: 100px;
+      height: 100px;
+      font-size: 20px;
+    background-color: $info;
+    &:hover{
+    background-color: black;
+   }
+    }    
   }
   .tasty-list{
+    
     .card {
       display: flex;
       flex-direction: column;
@@ -37,33 +59,206 @@
         width: 90%;
       }
     }
+
     .slide-img {    
       width: 100%;
       padding-bottom: 72%;
       background-size: cover;
       background-position: center center;
     }
-    .img-1{
-      background-image: url(../images/pro-1.jpg);
+    .tasty-item-title{
+      font-size: 24px;
     }
-    .img-2{
-      background-image: url(../images/pro-2.jpg);
+    .tasty-item-price,.tasty-button{
+      font-size: 20px;
     }
-    .img-3{
-      background-image: url(../images/pro-3.jpg);
+    
+    .cool-noodle{
+      .img-1{
+        background-image: url(../images/cool-noodle3.jpg);
+      }
+      .img-2{
+        background-image: url(../images/cool-noodle2.jpg);
+      }
+      .img-3{
+        background-image: url(../images/cool-noodle1.jpg);
+      }
+      .img-4{
+        background-image: url(../images/pro-4.jpg);
+      }    
+      .tasty-button{
+        .more,.addcart{
+          width: 45%;
+        }
+      }
     }
-    .img-4{
-      background-image: url(../images/pro-4.jpg);
+    .soup-noodle{
+      .img-1{
+        background-image: url(../images/soup-noodle1.jpg);
+      }
+      .img-2{
+        background-image: url(../images/soup-noodle2.jpg);
+      }
+      .img-3{
+        background-image: url(../images/soup-noodle3.jpg);
+      }
+      .img-4{
+        background-image: url(../images/soup-noodle4.jpg);
+      }
+      .img-5{
+        background-image: url(../images/soup-noodle5.jpg);
+      }      
     }
-    .tasty-chili-icon{
-      background-image: url(../images/chili.png);
-     
-      width: 24px;
-      height: 24px;
+    .fride-food{
+      .img-1{
+        background-image: url(../images/fride1.jpg);
+      }
+      .img-2{
+        background-image: url(../images/fride2.jpg);
+      }
+      .img-3{
+        background-image: url(../images/fride3.jpg);
+      }
+      .img-4{
+        background-image: url(../images/fride4.jpg);
+      }
+      .img-5{
+        background-image: url(../images/fride5.jpg);
+      }
+           
     }
-  
+    .side-desh{
+      .img-1{
+        background-image: url(../images/side-desh1.jpg);
+      }
+      .img-2{
+        background-image: url(../images/side-desh2.jpg);
+      }
+      .img-3{
+        background-image: url(../images/side-desh3.jpg);
+      }
+      
+    }
+    .soup{
+      .img-1{
+        background-image: url(../images/miso-soup.jpg);
+      }  
+    } 
   }
 }
+ 
+/*RWD*/
+@include media-breakpoint-up(md) {   
+  .tasty{
+   
+    .tasty-menu{
+      img{       
+        width: 50px;
+        height: 50px;
+        margin-top: 30px;     
+      }
+      .tasty-menu-item{
+        width: 149px;
+        height: 149px;
+        font-size: 28px;            
+      }
+    }
+    .tasty-list{
+      .tasty-item-title{
+        font-size: 30px;
+      }
+      .tasty-item-price{
+        font-size: 24px;
+      }
+      .tasty-item-price,.tasty-button{
+        font-size:20px;
+      }
+    }
+  }
+ }
+
+ @include media-breakpoint-down(xl) {
+  .tasty{
+    .banner{
+      h2{
+        color: red;
+      }
+      .banner-title{
+        padding-top: 100px;
+        position:unset;
+        text-align: center;
+      }
+      .banner-info{
+        position:unset;
+        text-align: center;
+      }
+     
+      
+      
+    } 
+  }
+ 
+   
+
+
+  }
+
+  @include media-breakpoint-down(lg) {
+    .tasty{
+      .banner{
+        h2{
+          color: red;
+        }
+        .banner-title{
+          padding-top: 150px;
+          position:unset;
+          text-align: center;
+        }
+        .banner-info{
+          position:unset;
+          text-align: center;
+        }
+       
+        
+        
+      } 
+    }
+   
+     
+  
+  
+    }
+
+  @include media-breakpoint-down(sm) {
+    .tasty{
+      .banner{
+        h2{
+          color: red;
+        }
+        .banner-title{
+          padding-top: 50px;
+          position:unset;
+          text-align: center;
+        }
+        .banner-info{
+          position:unset;
+          text-align: center;
+          
+        }
+       
+        
+        
+      } 
+    }
+   
+     
+  
+  
+    }
+
+
+ 
+
 
 
 /* 購物車 alert

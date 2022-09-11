@@ -1,10 +1,34 @@
 .tastyDetail{  
   .banner{
     height: 50vh;
-    background-image: url(../images/index-header_banner1.png);
+    background-image: url(../images/tastydetail-banner.jpg);
     background-size: cover;    
     background-position:center center;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    position: relative;
+    &::after{
+      position: absolute;
+      content:"";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color:black;
+      opacity: 0.1;
+    }   
+  }
+  .banner-title{
+    position: absolute;
+    top: 70px;
+    left: 423px;
+    
+    z-index: 1;
+  }
+  .banner-info{
+    position: absolute;
+    top: 242px;
+    left: 651px;
+    z-index: 1;
   }
 
     .breadcrumb > .active,.breadcrumb > .active a {
@@ -20,8 +44,12 @@ ol > li > a {color:$gray-600};
     height: auto;
   }
   .badge{
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: super;
+  }
+  .price{
+    font-size:24px ;
+    color: red;
   }
   button{
     color: #0E376F;
@@ -93,13 +121,85 @@ ol > li > a {color:$gray-600};
   .tastyDetail{
     .tastyDetail-breadcrumb-list,.tastyDetail-product-item{
       width: 100%;
-    }
-    // .tastyDetail-product{
-    //   img{
-    //     margin-bottom: 50px;
-    //   }
-    // }
-    
-  }
-  
+    }   
+  } 
  }
+
+ @include media-breakpoint-down(xl) {
+  .tastyDetail{
+    .banner{
+      h2{
+        color: red;
+      }
+      .banner-title{
+        padding-top: 100px;
+        position:unset;
+        text-align: center;
+      }
+      .banner-info{
+        position:unset;
+        text-align: center;
+      }
+     
+      
+      
+    } 
+  }
+ 
+   
+
+
+  }
+
+  @include media-breakpoint-down(lg) {
+    .tastyDetail{
+      .banner{
+        h2{
+          color: red;
+        }
+        .banner-title{
+          padding-top: 150px;
+          position:unset;
+          text-align: center;
+        }
+        .banner-info{
+          position:unset;
+          text-align: center;
+        }
+       
+        
+        
+      } 
+    }
+   
+     
+  
+  
+    }
+
+  @include media-breakpoint-down(sm) {
+    .tastyDetail{
+      .banner{
+        h2{
+          color: red;
+        }
+        .banner-title{
+          padding-top: 50px;
+          position:unset;
+          text-align: center;
+        }
+        .banner-info{
+          position:unset;
+          text-align: center;
+          
+        }
+       
+        
+        
+      } 
+    }
+   
+     
+  
+  
+    }
