@@ -8840,6 +8840,10 @@ fieldset:disabled .btn {
   font-size: 1rem !important;
 }
 
+.fs-30 {
+  font-size: calc(1.3125rem + 0.75vw) !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -12985,6 +12989,9 @@ fieldset:disabled .btn {
   .fs-5 {
     font-size: 1.5rem !important;
   }
+  .fs-30 {
+    font-size: 1.875rem !important;
+  }
 }
 
 @media print {
@@ -13025,6 +13032,7 @@ fieldset:disabled .btn {
 }
 
 body {
+  font-family: 'Noto Serif TC', serif;
   line-height: 1.5;
   background-color: #EBDABC;
 }
@@ -13222,25 +13230,53 @@ body img {
 
 .tasty .banner {
   height: 50vh;
-  background-image: url(../images/index-header_banner1.png);
+  background-image: url(../images/tasty-banner.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.tasty .banner::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.1;
+}
+
+.tasty .banner .banner-title {
+  position: absolute;
+  top: 70px;
+  left: 423px;
+  z-index: 1;
+}
+
+.tasty .banner .banner-info {
+  position: absolute;
+  top: 242px;
+  left: 651px;
+  z-index: 1;
 }
 
 .tasty .tasty-menu img {
-  width: 24px;
-  height: 24px;
-}
-
-.tasty .tasty-menu img:hover {
-  width: 36px;
-  height: 36px;
-  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
 }
 
 .tasty .tasty-menu .tasty-menu-item {
-  height: 60px;
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  background-color: #7b7d42cc;
+}
+
+.tasty .tasty-menu .tasty-menu-item:hover {
+  background-color: black;
 }
 
 .tasty .tasty-list .card {
@@ -13270,26 +13306,156 @@ body img {
   background-position: center center;
 }
 
-.tasty .tasty-list .img-1 {
-  background-image: url(../images/pro-1.jpg);
+.tasty .tasty-list .tasty-item-title {
+  font-size: 24px;
 }
 
-.tasty .tasty-list .img-2 {
-  background-image: url(../images/pro-2.jpg);
+.tasty .tasty-list .tasty-item-price, .tasty .tasty-list .tasty-button {
+  font-size: 20px;
 }
 
-.tasty .tasty-list .img-3 {
-  background-image: url(../images/pro-3.jpg);
+.tasty .tasty-list .cool-noodle .img-1 {
+  background-image: url(../images/cool-noodle3.jpg);
 }
 
-.tasty .tasty-list .img-4 {
+.tasty .tasty-list .cool-noodle .img-2 {
+  background-image: url(../images/cool-noodle2.jpg);
+}
+
+.tasty .tasty-list .cool-noodle .img-3 {
+  background-image: url(../images/cool-noodle1.jpg);
+}
+
+.tasty .tasty-list .cool-noodle .img-4 {
   background-image: url(../images/pro-4.jpg);
 }
 
-.tasty .tasty-list .tasty-chili-icon {
-  background-image: url(../images/chili.png);
-  width: 24px;
-  height: 24px;
+.tasty .tasty-list .cool-noodle .tasty-button .more, .tasty .tasty-list .cool-noodle .tasty-button .addcart {
+  width: 45%;
+}
+
+.tasty .tasty-list .soup-noodle .img-1 {
+  background-image: url(../images/soup-noodle1.jpg);
+}
+
+.tasty .tasty-list .soup-noodle .img-2 {
+  background-image: url(../images/soup-noodle2.jpg);
+}
+
+.tasty .tasty-list .soup-noodle .img-3 {
+  background-image: url(../images/soup-noodle3.jpg);
+}
+
+.tasty .tasty-list .soup-noodle .img-4 {
+  background-image: url(../images/soup-noodle4.jpg);
+}
+
+.tasty .tasty-list .soup-noodle .img-5 {
+  background-image: url(../images/soup-noodle5.jpg);
+}
+
+.tasty .tasty-list .fride-food .img-1 {
+  background-image: url(../images/fride1.jpg);
+}
+
+.tasty .tasty-list .fride-food .img-2 {
+  background-image: url(../images/fride2.jpg);
+}
+
+.tasty .tasty-list .fride-food .img-3 {
+  background-image: url(../images/fride3.jpg);
+}
+
+.tasty .tasty-list .fride-food .img-4 {
+  background-image: url(../images/fride4.jpg);
+}
+
+.tasty .tasty-list .fride-food .img-5 {
+  background-image: url(../images/fride5.jpg);
+}
+
+.tasty .tasty-list .side-desh .img-1 {
+  background-image: url(../images/side-desh1.jpg);
+}
+
+.tasty .tasty-list .side-desh .img-2 {
+  background-image: url(../images/side-desh2.jpg);
+}
+
+.tasty .tasty-list .side-desh .img-3 {
+  background-image: url(../images/side-desh3.jpg);
+}
+
+.tasty .tasty-list .soup .img-1 {
+  background-image: url(../images/miso-soup.jpg);
+}
+
+/*RWD*/
+@media (min-width: 768px) {
+  .tasty .tasty-menu img {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+  }
+  .tasty .tasty-menu .tasty-menu-item {
+    width: 149px;
+    height: 149px;
+    font-size: 28px;
+  }
+  .tasty .tasty-list .tasty-item-title {
+    font-size: 30px;
+  }
+  .tasty .tasty-list .tasty-item-price {
+    font-size: 24px;
+  }
+  .tasty .tasty-list .tasty-item-price, .tasty .tasty-list .tasty-button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .tasty .banner h2, .tasty .banner .h2 {
+    color: red;
+  }
+  .tasty .banner .banner-title {
+    padding-top: 100px;
+    position: unset;
+    text-align: center;
+  }
+  .tasty .banner .banner-info {
+    position: unset;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .tasty .banner h2, .tasty .banner .h2 {
+    color: red;
+  }
+  .tasty .banner .banner-title {
+    padding-top: 150px;
+    position: unset;
+    text-align: center;
+  }
+  .tasty .banner .banner-info {
+    position: unset;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .tasty .banner h2, .tasty .banner .h2 {
+    color: red;
+  }
+  .tasty .banner .banner-title {
+    padding-top: 50px;
+    position: unset;
+    text-align: center;
+  }
+  .tasty .banner .banner-info {
+    position: unset;
+    text-align: center;
+  }
 }
 
 /* 購物車 alert
@@ -13304,10 +13470,36 @@ Swal.fire({
 */
 .tastyDetail .banner {
   height: 50vh;
-  background-image: url(../images/index-header_banner1.png);
+  background-image: url(../images/tastydetail-banner.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.tastyDetail .banner::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.1;
+}
+
+.tastyDetail .banner-title {
+  position: absolute;
+  top: 70px;
+  left: 423px;
+  z-index: 1;
+}
+
+.tastyDetail .banner-info {
+  position: absolute;
+  top: 242px;
+  left: 651px;
+  z-index: 1;
 }
 
 .tastyDetail .breadcrumb > .active, .tastyDetail .breadcrumb > .active a {
@@ -13324,8 +13516,13 @@ Swal.fire({
 }
 
 .tastyDetail .tastyDetail-product .badge {
-  font-size: 16px;
+  font-size: 14px;
   vertical-align: super;
+}
+
+.tastyDetail .tastyDetail-product .price {
+  font-size: 24px;
+  color: red;
 }
 
 .tastyDetail .tastyDetail-product button {
@@ -13408,6 +13605,51 @@ Swal.fire({
 @media (max-width: 575.98px) {
   .tastyDetail .tastyDetail-breadcrumb-list, .tastyDetail .tastyDetail-product-item {
     width: 100%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .tastyDetail .banner h2, .tastyDetail .banner .h2 {
+    color: red;
+  }
+  .tastyDetail .banner .banner-title {
+    padding-top: 100px;
+    position: unset;
+    text-align: center;
+  }
+  .tastyDetail .banner .banner-info {
+    position: unset;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .tastyDetail .banner h2, .tastyDetail .banner .h2 {
+    color: red;
+  }
+  .tastyDetail .banner .banner-title {
+    padding-top: 150px;
+    position: unset;
+    text-align: center;
+  }
+  .tastyDetail .banner .banner-info {
+    position: unset;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .tastyDetail .banner h2, .tastyDetail .banner .h2 {
+    color: red;
+  }
+  .tastyDetail .banner .banner-title {
+    padding-top: 50px;
+    position: unset;
+    text-align: center;
+  }
+  .tastyDetail .banner .banner-info {
+    position: unset;
+    text-align: center;
   }
 }
 
