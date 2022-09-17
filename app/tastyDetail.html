@@ -32,18 +32,26 @@ current: index
     <section class="tastyDetail-product mb-100 mx-3">
       <div class="tastyDetail-product-item mx-auto">
         <div class="row">        
-          <div class="col-12 col-md-6 pe-4 mb-4">          
-            <img src="./assets/images/cool-noodle3.jpg" alt="">
+          <div class="col-12 col-md-6 px-4 mb-4">          
+            <img src="./assets/images/cool-noodle3.jpg" alt="" class=" rounded">
           </div>
-          <div class="product-info col-12 col-md-6">
+          <div class="product-info col-12 col-md-6 px-4">
             <h1 class="product-name mb-4">叉燒涼麵 <span class="badge bg-info ms-2 ">涼麵</span></h1>
-            <ul class="ps-0" >          
-              <li class="fs-6 mb-4"><span>產品描述:</span><span>叉燒是由五花肉扣成圓條狀後先將外皮煎半焦，然後再下鍋老滷，口感上可以讓肉質更鎖住肉汁，鮮嫩味美~而且滷汁味道也比較清甜不油膩~還帶點焦香，再配上微酸解膩的泡菜，讓您有大大的滿足感!!</span> </li>
+            <!-- <ul class="ps-0" >          
+              <li class="fs-6 mb-4"><span class="me-2">產品描述:</span><span>叉燒是由五花肉扣成圓條狀後先將外皮煎半焦，然後再下鍋老滷，口感上可以讓肉質更鎖住肉汁，鮮嫩味美~而且滷汁味道也比較清甜不油膩~還帶點焦香，再配上微酸解膩的泡菜，讓您有大大的滿足感!!</span> </li>
               <li class="fs-6 mb-4"><span>商品內容:</span><span>麵條、小黃瓜、番茄、蛋、叉燒、泡菜、醬汁</span> </li>
               <li class="fs-6"><span>價格:</span><span class="price">80元</span></li>
-            </ul>
-            <div class="d-flex">
-              <select>            
+            </ul> -->
+            <div class="row">
+             <div class="col-3">產品描述:</div>
+             <div class="col-9 pb-3">叉燒是由五花肉扣成圓條狀後先將外皮煎半焦，然後再下鍋老滷，口感上可以讓肉質更鎖住肉汁，鮮嫩味美~而且滷汁味道也比較清甜不油膩~還帶點焦香，再配上微酸解膩的泡菜，讓您有大大的滿足感!!</div>
+             <div class="col-3">商品內容:</div>
+             <div class="col-9 pb-3">麵條、小黃瓜、番茄、蛋、叉燒、泡菜、醬汁</div> 
+             <div class="col-3 pb-3">價格:</div>             
+             <div class="col-9 pb-3">80元</div>                                
+            </div>
+            <div class="row justify-content-between">
+              <select class="col-5 py-1">            
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -55,58 +63,61 @@ current: index
                 <option>9</option>
                 <option>10</option>
               </select>
-              <button type="button" class="btn btn-dark text-light">加到購物車</button>
-            </div>
+              <button type="button" class="col-5 btn btn-dark text-light">加到購物車</button>    
+             </div>  
           </div>
         </div> 
       </div>              
     </section>
 
     <section class="swiper-father mx-3 mb-100">
+      <div class="maybe-like">
+        <h3 class="text-center mb-5">或許你會喜歡...</h3>
+      </div>     
       <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">
+          <div class="swiper-slide" data-aos="flip-up">
             <div class="card">
-              <h4 class="card-title">香酥蔥油湯麵</h4>
-              <p class="card-text">番茄豆皮</p>             
+              <h4 class="card-title pt-3">經典涼麵</h4>
+              <p class="card-text">麵條、小黃瓜番茄、蛋</p>             
               <div class="slide-img img-1"></div>
               <div class="card-body">
-                <p class="card-text">NT$.123</p>
+                <p class="card-text">NT$.80</p>
                 <a href="#" class="btn btn-info text-light">加入購物車</a>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" data-aos="flip-up">
             <div class="card">
-              <h4 class="card-title">香酥蔥油湯麵</h4>
-              <p class="card-text">番茄豆皮</p>             
+              <h4 class="card-title pt-3">叉燒涼麵</h4>
+              <p class="card-text">麵條、小黃瓜、番茄</p>             
               <div class="slide-img img-2"></div>
               <div class="card-body">
-                <p class="card-text">NT$.123</p>
+                <p class="card-text">NT$.120</p>
                 <a href="#" class="btn btn-info text-light">加入購物車</a>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide" data-aos="flip-up">
             <div class="card">
-              <h4 class="card-title">香酥蔥油湯麵</h4>
-              <p class="card-text">番茄豆皮</p>             
+              <h4 class="card-title pt-3">家常麵</h4>
+              <p class="card-text">香菇、蒜頭、洋蔥</p>             
               <div class="slide-img img-3"></div>
               <div class="card-body">
-                <p class="card-text">NT$.123</p>
+                <p class="card-text">NT$.65</p>
                 <a href="#" class="btn btn-info text-light">加入購物車</a>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <h4 class="card-title">香酥蔥油湯麵</h4>
-              <p class="card-text">番茄豆皮</p>             
+          <div class="swiper-slide" data-aos="flip-up">
+            <div class="card pt-3">
+              <h4 class="card-title">南洋叻沙湯麵</h4>
+              <p class="card-text">叉燒、蘿蔔絲、香菜</p>             
               <div class="slide-img img-4"></div>
               <div class="card-body">
-                <p class="card-text">NT$.123</p>
+                <p class="card-text">NT$.120</p>
                 <a href="#" class="btn btn-info text-light">加入購物車</a>
               </div>
             </div>

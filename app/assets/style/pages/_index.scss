@@ -8,10 +8,24 @@
     .button{
       width: 90%;
       height: 45%;      
-      padding-top:18px;
-      font-weight: bold;
-      
+      padding-top:12px;
+      font-weight: bold;      
     }
+    .banner-info a{
+      color:black;
+      &:hover{
+        color: red;
+      }
+    }
+  }
+  .hot-food{       
+    h4{
+      color: black;
+      &:hover{
+        color: #7B7D42;
+      }
+    }
+      
   }
   .news{
     // max-height: 242px;

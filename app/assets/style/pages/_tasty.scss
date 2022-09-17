@@ -20,14 +20,13 @@
    
     .banner-title{
       position: absolute;
-      top: 70px;
-      left: 423px;
+      top:18%;      
       z-index: 1;
     }
     .banner-info{
       position: absolute;
-      top: 242px;
-      left: 651px;
+      top:73%;
+      // font-size: 36px;
       z-index: 1;
     }
   }
@@ -271,3 +270,47 @@ Swal.fire({
 })
 
 */
+
+
+@include media-breakpoint-down(lg){
+  .about{
+    // .banner{
+    //   .banner-title{
+    //     top:26%;
+    //   }
+    //   .banner-info{
+    //     top: 58%;
+    //   }
+
+    // }
+    .about-delicious{
+      .about-delicious-creative{
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+  }
+ }
+
+//  @include media-breakpoint-down(xl){
+//   .about{
+//     .banner{
+//       .banner-title{
+//         top:13%;
+//       }
+//       .banner-info{
+//         top: 61%;
+//       }
+
+//     }
+    
+//   }
+//  }
+
+
+ 
+// @include media-breakpoint-only(sm){
+//   .tasty-banner-title{
+//     top: 24% !important;
+//   }
+// }

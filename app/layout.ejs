@@ -11,6 +11,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!--sweetalert-->
     <script src="sweetalert2/dist/sweetalert2.min.js"></script>
     <!--google font-->
@@ -18,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
+    <!--AOS滾動視差-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -44,15 +48,15 @@
               </ul>            
 
               <ul class="serch-shopCart navbar-nav text-center flex-row flex-nowrap justify-content-between">              
-                <li class="serch nav-item me-2">
+                <!-- <li class="serch nav-item me-2">
                   <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person"></i></a>
-                </li>
+                </li> -->
                 <li class="serch nav-item me-2">                  
                   <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-search"></i></a>                 
                 </li>
-                <li class="cart nav-item">                  
+                <!-- <li class="cart nav-item">                  
                   <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart"></i></a>                 
-                </li>                      
+                </li>                       -->
               </ul>             
             </div>
           </div>
@@ -64,7 +68,7 @@
     <%- contents %>
 
     <footer class="footer bg-dark">
-      <div class="container  d-flex justify-content-between py-5">
+      <div class="container  d-flex justify-content-between py-md-5 py-4">
         <nav class="contact">
           <div class="mb-3 text-light"> <a href="javascript:void(0)">聯絡我們</a></div>
           <ul class="contact-info">           
@@ -93,13 +97,16 @@
       </div>
       <div class="copyright bg-success">
         <div class="container">
-          <p class="text-light mb-0">ⓒ Copyright 2022 麵鋪子僅作為個人作品，無任何商業用途</p>        
+          <p class="text-light mb-0  py-2">ⓒ Copyright 2022 麵鋪子僅作為個人作品，無任何商業用途</p>        
         </div>                   
       </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    <!--AOS滾動視差-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
   </body>
 
 </html>
