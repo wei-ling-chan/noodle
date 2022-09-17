@@ -11,6 +11,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!--sweetalert-->
     <script src="sweetalert2/dist/sweetalert2.min.js"></script>
     <!--google font-->
@@ -18,6 +20,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
+    <!--AOS滾動視差-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -44,15 +48,15 @@
               </ul>            
 
               <ul class="serch-shopCart navbar-nav text-center flex-row flex-nowrap justify-content-between">              
-                <li class="serch nav-item me-2">
+                <!-- <li class="serch nav-item me-2">
                   <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person"></i></a>
-                </li>
+                </li> -->
                 <li class="serch nav-item me-2">                  
                   <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-search"></i></a>                 
                 </li>
-                <li class="cart nav-item">                  
+                <!-- <li class="cart nav-item">                  
                   <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart"></i></a>                 
-                </li>                      
+                </li>                       -->
               </ul>             
             </div>
           </div>
@@ -62,42 +66,41 @@
     </header>    
 
     <div class="index">
-  <section class="banner d-flex flex-column align-items-center justify-content-between pt-3 pb-6 mb-100">  
+  <section class="banner d-flex flex-column align-items-center justify-content-between pt-3 pb-6 mb-36 mb-md-100" data-aos="fade-up">  
     <div class="banner-title">
       <h2 class="text-light">用心製麵</h2>
     </div>
     <div class="banner-info ">
       <p class="text-light display-6">為您獻上美味的一碗</p>
-      <div class="button bg-light text-dark text-center  mx-auto h6">了解更多</div>
+      <a href="./tasty.html" class="button d-block bg-light  text-center  mx-auto h6">了解更多</a>
     </div> 
   </section>
   <section class="hot-food">   
     <div class="container">
-      <h1 class="mb-20">熱門美食</h1>      
-      <div class="row"> 
-        <div class="col-12 col-md-6 p-3">
-          <img class="w-100" src="./assets/images/hot-food1.png" alt="">
+      <h1 class="mb-20">熱門美食</h1>
+      <div class="row">        
+        <a href="#" class="col-12 col-md-6 p-3 d-block">
+          <img class="w-100" src="./assets/images/hot-food1.png" alt="" data-aos="zoom-in">
           <h4 class="text-center pt-2 pb-4">涼麵系列</h4>    
-        </div>
-        <div class="col-12 col-md-6 p-3">
-          <img class="w-100" src="./assets/images/hot-food2.png" alt="">
+        </a>       
+        <a href="#" class="col-12 col-md-6 p-3">
+          <img class="w-100" src="./assets/images/hot-food2.png" alt="" data-aos="zoom-in">
           <h4 class="text-center pt-2 pb-4">湯麵系列</h4>    
-        </div>
-        <div class="col-12 col-md-6 p-3" style="margin-top:-36px ;">
-          <img class="w-100" src="./assets/images/hot-food4.png" alt="">
-          <h4 class="text-center  pt-2 pb-4 ">炸物系列</h4>    
-        </div>
-        <div class="col-12 col-md-6 p-3">
-          <img class="w-100" src="./assets/images/hot-food3.png" style="margin-top:-36px ;" alt="">
-          <h4 class="text-center pt-2 pb-4 ">小菜系列</h4>
-    
-        </div>
+        </a>
+        <a href="#" class="col-12 col-md-6 p-3" style="margin-top:-36px ;">
+          <img class="w-100" src="./assets/images/hot-food4.png" alt="" data-aos="zoom-in">
+          <h4 class="text-center pt-2 pb-4 ">炸物系列</h4>  
+        </a>
+        <a href="#" class="col-12 col-md-6 p-3">
+          <img class="w-100" src="./assets/images/hot-food3.png" style="margin-top:-36px ;" alt="" data-aos="zoom-in">
+          <h4 class="text-center pt-2 pb-4 ">小菜系列</h4>  
+        </a>
       </div>      
     </div>
     
   </section>
 
-  <section class="news">
+  <section class="news mt-0 mb-100 my-md-200">
     <div class="news-list container px-4">
       <div class="news-items"> 
         <div class="news-border d-flex d-flex d-flex justify-content-between align-items-center border border-light border-3">
@@ -106,7 +109,7 @@
             <h3 class="news-title  mb-lg-4 ">最新消息</h3> 
             <p class="fs-5 fs-md-3 mb-0">香酥蔥油乾麵口味新品上市!</p>
             <p class="fs-5 mb-2 mb-md-2">即日起加入會員享...</p>
-            <div class="button bg-dark p-2 text-light fs-6 text-center">了解更多</div>
+            <div href="./tasty.html" class="button bg-dark p-2 text-light fs-6 text-center">了解更多</div>
           </div>
           <div class=" news-image d-none d-lg-block">
             <img src="./assets/images/news1.png" alt="">  
@@ -127,44 +130,44 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <div class="card">
-                <h4 class="card-title pt-3">香酥蔥油湯麵</h4>
-                <p class="card-text">番茄豆皮</p>             
+                <h4 class="card-title pt-3">經典涼麵</h4>
+                <p class="card-text">麵條、小黃瓜番茄、蛋</p>             
                 <div class="slide-img img-1"></div>
                 <div class="card-body">
-                  <p class="card-text">NT$.123</p>
+                  <p class="card-text">NT$.80</p>
                   <a href="#" class="btn btn-info text-light">加入購物車</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card">
-                <h4 class="card-title pt-3">香酥蔥油湯麵</h4>
-                <p class="card-text">番茄豆皮</p>             
+                <h4 class="card-title pt-3">叉燒涼麵</h4>
+                <p class="card-text">麵條、小黃瓜、番茄</p>             
                 <div class="slide-img img-2"></div>
                 <div class="card-body">
-                  <p class="card-text">NT$.123</p>
+                  <p class="card-text">NT$.120</p>
                   <a href="#" class="btn btn-info text-light">加入購物車</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card">
-                <h4 class="card-title pt-3">香酥蔥油湯麵</h4>
-                <p class="card-text">番茄豆皮</p>             
+                <h4 class="card-title pt-3">家常麵</h4>
+                <p class="card-text">香菇、蒜頭、洋蔥</p>             
                 <div class="slide-img img-3"></div>
                 <div class="card-body">
-                  <p class="card-text">NT$.123</p>
+                  <p class="card-text">NT$.65</p>
                   <a href="#" class="btn btn-info text-light">加入購物車</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card pt-3">
-                <h4 class="card-title">香酥蔥油湯麵</h4>
-                <p class="card-text">番茄豆皮</p>             
+                <h4 class="card-title">南洋叻沙湯麵</h4>
+                <p class="card-text">叉燒、蘿蔔絲、香菜</p>             
                 <div class="slide-img img-4"></div>
                 <div class="card-body">
-                  <p class="card-text">NT$.123</p>
+                  <p class="card-text">NT$.120</p>
                   <a href="#" class="btn btn-info text-light">加入購物車</a>
                 </div>
               </div>
@@ -232,7 +235,7 @@
 
 
     <footer class="footer bg-dark">
-      <div class="container  d-flex justify-content-between py-5">
+      <div class="container  d-flex justify-content-between py-md-5 py-4">
         <nav class="contact">
           <div class="mb-3 text-light"> <a href="javascript:void(0)">聯絡我們</a></div>
           <ul class="contact-info">           
@@ -261,13 +264,16 @@
       </div>
       <div class="copyright bg-success">
         <div class="container">
-          <p class="text-light mb-0">ⓒ Copyright 2022 麵鋪子僅作為個人作品，無任何商業用途</p>        
+          <p class="text-light mb-0  py-2">ⓒ Copyright 2022 麵鋪子僅作為個人作品，無任何商業用途</p>        
         </div>                   
       </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    <!--AOS滾動視差-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
   </body>
 
 </html>
