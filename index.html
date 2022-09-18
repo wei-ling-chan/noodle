@@ -10,11 +10,17 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!--sweetalert-->
-    <script src="sweetalert2/dist/sweetalert2.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/themes@5.0.12/bootstrap-4/bootstrap-4.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+
+
     <!--google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,24 +46,38 @@
                   <a class="nav-link" aria-current="page" href="about.html">關於我們</a>                  
                 </li>
                 <li class="nav-item me-md-6 me-0 my-2 ">
-                  <a class="nav-link" href="tasty.html">美味專區</a>
+                  <a class="nav-link" href="tasty2.html">美味專區</a>
                 </li>
                 <li class="nav-item me-md-6 me-0 my-2">                  
                   <a class="nav-link" href="news.html">最新消息</a>
                 </li>                         
               </ul>            
 
-              <ul class="serch-shopCart navbar-nav text-center flex-row flex-nowrap justify-content-between">              
-                <!-- <li class="serch nav-item me-2">
+              <!-- <ul class="serch-shopCart navbar-nav text-center flex-row flex-nowrap justify-content-between">              
+                  <li class="serch nav-item me-2">
                   <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person"></i></a>
-                </li> -->
+                </li> 
                 <li class="serch nav-item me-2">                  
                   <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-search"></i></a>                 
                 </li>
-                <!-- <li class="cart nav-item">                  
+                 <li class="cart nav-item">                  
                   <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart"></i></a>                 
-                </li>                       -->
-              </ul>             
+                </li>                       
+              </ul>  -->
+
+              <ul class="serch-shopCart navbar-nav text-center flex-row flex-nowrap justify-content-between">              
+                <li class="serch nav-item me-2">
+                  <form action="tasty2.html" method="get" id="search_tasty">
+                    <div class="d-flex">
+                      <input type="text" class="form-control bg-primary border-2" name="keyword" placeholder="請輸入搜尋產品">
+                      <button type="submit" class="btn btn-primary"><i class="bi bi-search"></i></button>
+                    </div>
+                  </form>                  
+                </li>                      
+              </ul>               
+              
+
+
             </div>
           </div>
         </nav>
@@ -274,6 +294,19 @@
     <!--AOS滾動視差-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init();</script>
+
+    <script>
+      const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: "btn btn-info",
+        },
+        buttonsStyling: false,
+      });
+    </script>
+
+
+
+
   </body>
 
 </html>
